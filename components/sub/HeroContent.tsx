@@ -14,12 +14,8 @@ import { TypewriterEffect, TypewriterEffectSmooth } from "../ui/typewriter-effec
 
 const HeroContent = () => {
   return (
-    <motion.div
-      initial="hidden"
-      animate="visible"
-      className="flex flex-col lg:flex-row gap-10 items-center  pt-20 justify-center px-20 mt-16 w-full z-[20] container "
-    >
-      <div className="w-full lg:w-1/2 text-white">
+   <div className="w-full flex   container relative  pt-40">
+    <motion.div initial={{opacity: 0}} animate={{opacity: 1,x:[-500,0]}} transition={{duration:3}} className="w-full lg:w-1/2 text-white">
       <motion.div
           variants={slideInFromTop}
           className="Welcome-box py-[8px]  px-[7px] border border-[#7042f88b] opacity-[0.9] mb-8"
@@ -47,10 +43,9 @@ const HeroContent = () => {
           Learn More!
         </motion.a>
       
-      </div>
-      <motion.div className="w-1/2 h-full relative bg-red-60 flex justify-center items-center"
+      </motion.div>
+      <motion.div initial={{opacity: 0, rotateZ:180 }} animate={{opacity: 1,x:[500,0], rotateZ: 0}} transition={{duration:3}} className="w-1/2 h-full relative bg-red-60 flex justify-center items-center"
 
-      variants={slideInFromRight(0.5)}
       >
         <div className=" min-h-[400px] min-w-[400px] md:min-h-[500px] md:min-w-[500px] rounded-full  relative   shadow-[16px_20px_16px_20px_#7042f88b]">
           <div className="absolute min-w-[410px] min-h-[410px] md:min-w-[510px] md:min-h-[510px] flex justify-center items-center  overflow-hidden  w-[410px] h-[410px]  md:w-[510px] md:h-[510px] -left-[5px] -top-[5px]  z-0 rounded-full">
@@ -58,7 +53,7 @@ const HeroContent = () => {
             </div>
           </div>
           <div className="w-full h-full relative">
-        <motion.img src="/Avatar.jpeg" className="object-cover w-[400px] h-[400px] md:h-[500px] md:w-[500px]  realative z-20   rounded-full"/>
+        <motion.img src="/med.jpeg" className="object-cover w-[400px] h-[400px] md:h-[500px] md:w-[500px]  realative z-20   rounded-full"/>
 
           </div>
 
@@ -66,8 +61,8 @@ const HeroContent = () => {
 
 
       </motion.div>
-  
-    </motion.div>
+
+   </div>
   );
 };
 
