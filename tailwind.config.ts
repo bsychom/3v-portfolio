@@ -1,3 +1,4 @@
+import { transform } from 'next/dist/build/swc';
 import type { Config } from 'tailwindcss'
 const {
   default: flattenColorPalette,
@@ -15,9 +16,6 @@ const config: Config = {
       content: {
         'empty': '""',
       },
-      animation: {
-        "meteor-effect": "meteor 5s linear infinite",
-      },
       keyframes: {
         meteor: {
           "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
@@ -26,7 +24,16 @@ const config: Config = {
             transform: "rotate(215deg) translateX(-500px)",
             opacity: "0",
           },
+          
         },
+        avatar:{
+          "0%": {transform: "rotate(0deg)"},
+          "100%": {transform: "rotate(720deg)"}
+        }
+      },
+      animation: {
+        "meteor-effect": "meteor 5s linear infinite",
+        "avatar-spin": "avatar 5s linear infinite"
       },
       // backgroundImage: {
       //   'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

@@ -8,16 +8,18 @@ import { slideInFromTop } from "@/utils/motion";
 
 const Hero = () => {
   return (
-    <div className="relative flex flex-col h-full w-full" id="about-me">
+    <div className="relative flex flex-col h-full w-full " id="about-me">
       
       <motion.div
-      variants={slideInFromTop}
+        initial={{  opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: "easeOut",duration: 2 }}
       >
       <video
         autoPlay
         muted
         loop
-        className="rotate-180 absolute top-[-363px]  h-full w-full left-0 z-[1] object-cover "
+        className="rotate-180 absolute lg:top-[-363px] md:top-[-550px] ms:top-[-600px] top-[-700px]    h-full w-full left-0 z-[1] object-cover "
       >
         <source src="/blackhole.webm" type="video/webm" />
       </video>

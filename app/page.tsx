@@ -18,51 +18,49 @@ export default function Home() {
     <main className="h-full w-full">
       <div className="flex flex-col gap-20">
         <Hero />
-        <section className="w-full h-screen" id="aboutme">
+        <motion.section 
+        
+        className="w-full h-screen" id="aboutme">
           <div className="relative">
             <div className="absolute  z-50 h-full w-full bg-black/80 ">
               <div className="flex container w-full h-full items-center">
                 <div className="w-full md:w-[65%] mx-auto  text-white rounded-md  py-10">
-                <motion.div
-          variants={slideInFromTop}>
-
-      <MeteorsDemo/>
-          </motion.div>
-              
-
+                  <motion.div initial={{opacity: 0}} animate={{opacity: 1, x:[1000, 0]}} transition={{ease: "easeInOut", duration: 2}} className="" variants={slideInFromTop}>
+                    
+                    <MeteorsDemo />
+                  </motion.div>
                 </div>
               </div>
             </div>
+            <motion.div initial={{opacity: 0}} animate={{opacity: 1, x:[-1000, 0]}} transition={{ease: "easeInOut", duration: 2}}>
+            <Lottie animationData={anim} />
+            </motion.div>
 
-            <Lottie  animationData={anim} />
           </div>
-        </section>
+        </motion.section>
         <section className="container text-white relative">
           <div className="w-full flex flex-col items-center justify-center pt-10">
-
-        <motion.div
-          variants={slideInFromTop}
-          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9] mb-8"
-        >
-          <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-          <h1 className="Welcome-text text-[13px] font-[Poppins] font-semibold pr-2">
-          What I Will Do For You
-          </h1>
-        </motion.div >
-        <div className="">
-
-        <h2 className="text-xl  font-[Poppins] font-bold tracking-wider bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-cyan-800">Services</h2>
-        </div>
-        <div className="relative w-full h-[80vh]">
-          <div className="w-full absolute z-40 ">
-
-        <LayoutGridDemo/>
-        {/* <Image src='/mobile.avif' alt="" width={100} height={500}/> */}
+            <motion.div
+              variants={slideInFromTop}
+              className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9] mb-8"
+            >
+              <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
+              <h1 className="Welcome-text text-[13px] font-[Poppins] font-semibold pr-2">
+                What I Will Do For You
+              </h1>
+            </motion.div>
+            <div className="">
+              <h2 className="text-xl  font-[Poppins] font-bold tracking-wider bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-cyan-800">
+                Services
+              </h2>
+            </div>
+            <div className="relative w-full h-[80vh]">
+              <div className="w-full absolute z-40 ">
+                <LayoutGridDemo />
+                {/* <Image src='/mobile.avif' alt="" width={100} height={500}/> */}
+              </div>
+            </div>
           </div>
-
-        </div>
-          </div>
-          
         </section>
 
         <Skills />
