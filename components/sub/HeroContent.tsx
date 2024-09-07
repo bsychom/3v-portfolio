@@ -53,7 +53,7 @@ const HeroContent = () => {
             </div>
           </div>
           <div className="w-full h-full relative">
-        <motion.img src="/med.jpeg" className="object-cover w-[400px] h-[400px] md:h-[500px] md:w-[500px]  realative z-20   rounded-full"/>
+        <motion.img src="/mhaddaou.png" className="object-cover w-[400px] h-[400px] md:h-[500px] md:w-[500px] object-top  realative z-20   rounded-full"/>
 
           </div>
 
