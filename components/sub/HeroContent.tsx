@@ -2,21 +2,15 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  slideInFromLeft,
-  slideInFromRight,
-  slideInFromTop,
-} from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
-import Image from "next/image";
-import { TypewriterEffectSmoothDemo, words } from "./Writer";
-import { TypewriterEffect, TypewriterEffectSmooth } from "../ui/typewriter-effect";
+import { words } from "./Writer";
+import { TypewriterEffect} from "../ui/typewriter-effect";
 import Link from "next/link";
 
 const HeroContent = () => {
   return (
-   <div className="w-full flex flex-col items-center lg:flex-row   container relative  pt-40">
-    <motion.div  className="w-full lg:w-1/2 text-white flex flex-col gap-12  relative z-20">
+   <div className="w-full flex flex-col items-center lg:flex-row gap-16 mb-5 md:mb-0 md:gap-0  container relative  pt-40">
+    <motion.div  className="w-[95%] mx-auto lg:w-1/2 text-white flex flex-col gap-12  relative z-20  ">
      {/* welcom text */}
       <motion.div
   initial={{opacity: 0}} animate={{opacity: 1,x:[-500,0]}} transition={{duration:0.5}}
@@ -29,7 +23,7 @@ const HeroContent = () => {
         </motion.div>
         {/* writer lib */}
         <motion.div 
-        initial={{opacity: 0}} whileInView={{opacity: 1,x:[-500,0]}} transition={{duration:0.5}}
+        initial={{opacity: 0}} animate={{opacity: 1,x:[-500,0]}} transition={{duration:0.5}}
         className="">
           
           
@@ -38,22 +32,22 @@ const HeroContent = () => {
         </motion.div>
         {/* text */}
       <motion.p
-      initial={{opacity: 0}} whileInView={{opacity: 1, x:[-500,0]}}  transition={{duration:2}}
-          className="text-lg text-gray-400  max-w-[500px]"
+      initial={{opacity: 0}} animate={{opacity: 1, x:[-500,0]}}  transition={{duration:2}}
+          className="text-lg text-gray-400  w-[90%]  md:max-w-[500px]"
         >
           I&apos;m a Full Stack Software Engineer with experience in Website,
           Mobile, and Software development. Check out my projects and skills.
         </motion.p>
         {/* buttons */}
         <motion.div className="flex gap-5"
-      initial={{opacity: 0}} whileInView={{opacity: 1,x:[-500,0]}} transition={{duration:2.5}}
+      initial={{opacity: 0}} animate={{opacity: 1,x:[-500,0]}} transition={{duration:2.5}}
 
         
         >
           <motion.button
           whileHover={{scale: 1.1,transition:{duration: 1} }} whileTap={{ scale: 0.9 }}
           >
-        <Link href='/'
+        <Link href='/#aboutme'
           className="py-2 relative button-primary px-4 font-lemonada font-bold tracking-wider text-center text-white cursor-pointer rounded-lg max-w-[200px]"
         >
           Learn More!
@@ -73,7 +67,7 @@ const HeroContent = () => {
         
       
       </motion.div>
-      <motion.div initial={{opacity: 0, rotateZ:180 }} whileInView={{opacity: 1,x:[500,0], rotateZ: 0}} transition={{duration:3}} className="w-1/2   h-full relative bg-red-60 flex justify-center items-center"
+      <motion.div initial={{opacity: 0, rotateZ:180 }} animate={{opacity: 1,x:[500,0], rotateZ: 0}} transition={{duration:3}} className="w-1/2   h-full relative bg-red-60 flex justify-center items-center"
 
       >
         <div className=" min-h-[400px] min-w-[400px]  md:min-h-[500px] md:min-w-[500px] rounded-full  relative   shadow-[16px_20px_16px_20px_#7042f88b]">
