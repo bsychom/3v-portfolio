@@ -35,6 +35,9 @@ const config: Config = {
         "meteor-effect": "meteor 5s linear infinite",
         "avatar-spin": "avatar 5s linear infinite"
       },
+      fontFamily:{
+        'lemonada' : ['Lemonada', 'sans-serif'],
+      }
       // backgroundImage: {
       //   'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       //   'gradient-conic':

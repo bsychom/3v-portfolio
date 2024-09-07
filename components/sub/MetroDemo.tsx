@@ -8,7 +8,7 @@ import { SparklesIcon } from "@heroicons/react/24/solid";
 export function MeteorsDemo() {
   return (
     <div className="">
-      <div className=" w-full relative">
+      <div className=" w-full relative max-w-5xl container  px-5 md:px-0">
         <div className="  h-full w-full  rounded-full blur-3xl" />
         <div className="relative shadow-xl bg-black/50 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl ">
         
@@ -23,7 +23,7 @@ export function MeteorsDemo() {
           </h1>
         </motion.div >
 
-          <p className="font-normal font-[Poppins] text-base text-slate-400 mb-4 relative px-4 z-50 text-justify">
+          <p className="font-normal font-[Poppins] text-sm md:text-base text-slate-400 mb-4 relative px-4 z-50 text-justify">
             
             Hello! I'm Haddaoui Mohamed, a full stack software engineer with a
                   strong passion for IT and new technologies. Currently a
