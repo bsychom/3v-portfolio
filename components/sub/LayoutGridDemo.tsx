@@ -5,6 +5,9 @@ import { LayoutGrid } from "../ui/layout-grid";
 export function LayoutGridDemo() {
   return (
     <div className="h-screen py-20 w-full relative">
+      <h1 className="text-[40px] font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20 font-[Poppins] px-2 italic">
+        My Projects
+      </h1>
       <LayoutGrid cards={cards} />
     </div>
   );

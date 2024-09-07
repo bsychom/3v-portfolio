@@ -55,11 +55,11 @@ const HeroContent = () => {
 
           </motion.button>
         <motion.button whileHover={{scale: 1.1,transition:{duration: 1} }} whileTap={{ scale: 0.9 }}>
-        <Link href='/'
+        <motion.a href="Mohamed_Haddaoui_FullStack_cv.pdf" target="_blank"
           className="py-2 relative button-primary px-4 font-lemonada font-bold tracking-wider text-center text-white cursor-pointer rounded-lg max-w-[200px]"
         >
           Download CV
-        </Link>
+        </motion.a>
 
         </motion.button>
         

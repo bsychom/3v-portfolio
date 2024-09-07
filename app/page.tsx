@@ -42,9 +42,19 @@ export default function Home() {
           </motion.div>
         </motion.section>
 
+
         <Skills />
         <Encryption />
-        <Projects />
+        {/* <Projects /> */}
+        // display the layout grid demo with motion from left when in view 
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, x: [-800, 0] }}
+          transition={{ duration: 2 }}
+          className="container "
+        >
+        <LayoutGridDemo/>
+    </motion.div>
       </div>
     </main>
   );
