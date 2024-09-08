@@ -19,15 +19,16 @@ export default function Home() {
       <div className="flex flex-col gap-20">
         <Hero />
         <motion.section className="w-full   pt-24" id="aboutme">
-          <motion.div className="relative w-full  min-h-[100px]">
+          <motion.div className="relative w-full  min-h-[380px] sm:min-h-[100px]">
             <motion.div
+              className="hidden sm:block"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, x: [-800, 0], rotate: 0 }}
               transition={{ duration: 2 }}
             >
               <Lottie animationData={anim} />
             </motion.div>
-            <motion.div className=" absolute w-full h-full z-50 bg-black/80  top-0 left-0">
+            <motion.div className=" absolute w-full h-full z-50 sm:bg-black/80  top-0 left-0">
               <div className="relative flex w-full h-full  justify-center items-center">
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -46,15 +47,24 @@ export default function Home() {
         <Skills />
         <Encryption />
         {/* <Projects /> */}
-        // display the layout grid demo with motion from left when in view 
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, x: [-800, 0] }}
           transition={{ duration: 2 }}
-          className="container "
+          className="container relative z-40"
         >
         <LayoutGridDemo/>
     </motion.div>
+    <div className="w-screen  relative z-[500]  text-white flex h-screen mb-28" id="contactme">
+      <div className="flex flex-col justify-center">
+    <Image src='talk.svg' alt="" width={400} height={100}/>
+    <Image src='contactdec.svg' alt="" width={500} height={100}/>
+
+      </div>
+     
+
+
+    </div>
       </div>
     </main>
   );

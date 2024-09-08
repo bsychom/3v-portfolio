@@ -4,7 +4,7 @@ import { LayoutGrid } from "../ui/layout-grid";
 
 export function LayoutGridDemo() {
   return (
-    <div className="h-screen py-20 w-full relative">
+    <div className="min-h-screen  py-20 w-full relative">
       <h1 className="text-[40px] font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20 font-[Poppins] px-2 italic">
         My Projects
       </h1>
@@ -80,14 +80,14 @@ const cards = [
     content: <SkeletonOne />,
     className: "md:col-span-2",
     thumbnail:
-      "/frontend.jpeg",
+      "/irc.jpg",
   },
   {
     id: 2,
     content: <SkeletonTwo />,
     className: "col-span-1",
     thumbnail:
-      "/fullstack.jpeg",
+      "/financial.png",
   },
   {
     id: 3,
@@ -99,8 +99,51 @@ const cards = [
   {
     id: 4,
     content: <SkeletonFour />,
+    className: "",
+    thumbnail:
+      "/mobile.avif",
+  },
+  {
+    id: 5,
+    content: <SkeletonFour />,
+    className: "",
+    thumbnail:
+      "/mobile.avif",
+  },
+  {
+    id: 6,
+    content: <SkeletonFour />,
+    className: "",
+    thumbnail:
+      "/mobile.avif",
+  },
+  {
+    id: 7,
+    content: <SkeletonFour />,
+    className: "",
+    thumbnail:
+      "/mobile.avif",
+  },
+  {
+    id: 8,
+    content: <SkeletonFour />,
+    className: "",
+    thumbnail:
+      "/mobile.avif",
+  },
+  {
+    id: 9,
+    content: <SkeletonFour />,
+    className: "",
+    thumbnail:
+      "/mobile.avif",
+  },
+  {
+    id: 10,
+    content: <SkeletonFour />,
     className: "md:col-span-2",
     thumbnail:
       "/mobile.avif",
   },
+ 
 ];
