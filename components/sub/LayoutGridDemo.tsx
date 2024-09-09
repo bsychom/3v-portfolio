@@ -30,13 +30,16 @@ const SkeletonOne = () => {
 const SkeletonTwo = () => {
   return (
     <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
-      Full Stack Development
+      <p className="font-bold md:text-4xl text-xl text-white font-lemonada">
+      Financial App
         </p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-       
+      <p className="font-medium text-base w-[70%] pt-5 font-lexend-deca text-[#B7AEAE]">
+This project is a sleek and user-friendly financial app built entirely on the front end. Leveraging the power of Next.js 13, Tailwind CSS, TypeScript, and DeasyUI, this app delivers a seamless financial management experience .     
+
       </p>
+        <div  className="text-white w-full flex ">
+          <button>first</button><button>second</button>
+        </div>
     </div>
   );
 };

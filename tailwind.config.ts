@@ -37,6 +37,7 @@ const config: Config = {
       },
       fontFamily:{
         'lemonada' : ['Lemonada', 'sans-serif'],
+        'lexend-deca' : ['Lexend Deca', 'sans-serif'],
       }
       // backgroundImage: {
       //   'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
