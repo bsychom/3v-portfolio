@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Encryption = () => {
   return (
-    <div className="flex flex-row relative z- items-center justify-center  w-full md:h-[600px] h-[400px] ">
+    <div className="flex flex-row relative  items-center justify-center  w-full md:h-[600px] h-[400px] ">
       <div className="absolute w-auto h-auto top-0 z-[5]">
         <motion.div
         initial={{opacity:0}} whileInView={{opacity: 1, x:[500,0]}} transition={{duration: 2}}

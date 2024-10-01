@@ -15,7 +15,7 @@ import { MeteorsDemo } from "@/components/sub/MetroDemo";
 import { LayoutGridDemo } from "@/components/sub/LayoutGridDemo";
 export default function Home() {
   return (
-    <main className="h-full w-full">
+    <main className=" w-screen">
       <div className="flex flex-col gap-20">
         <Hero />
         <motion.section className="w-full   pt-24" id="aboutme">
@@ -55,7 +55,7 @@ export default function Home() {
         >
         <LayoutGridDemo/>
     </motion.div>
-    <div className="w-screen  relative z-[500]  text-white flex h-screen mb-28" id="contactme">
+    {/* <div className="w-screen  relative z-[500]  text-white flex h-screen mb-28" id="contactme">
       <div className="flex flex-col justify-center">
     <Image src='talk.svg' alt="" width={400} height={100}/>
     <Image src='contactdec.svg' alt="" width={500} height={100}/>
@@ -64,7 +64,7 @@ export default function Home() {
      
 
 
-    </div>
+    </div> */}
       </div>
     </main>
   );
