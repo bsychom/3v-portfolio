@@ -21,7 +21,7 @@ export function MeteorsDemo() {
           </motion.div>
           <div className="px-4 flex flex-col gap-3">
             <h3 className=" font-semibold text-slate-400 text-lg">
-              Hello! I'm Haddaoui Mohamed
+              Hello! I&apos;m Haddaoui Mohamed
             </h3>
 
             <p className="font-normal font-[Poppins] text-sm md:text-base text-slate-400 mb-4 relative  z-50 text-justify">

@@ -1,15 +1,9 @@
 "use client";
 import Encryption from "@/components/main/Encryption";
 import Hero from "@/components/main/Hero";
-import Projects from "@/components/main/Projects";
 import Skills from "@/components/main/Skills";
-import { words } from "@/components/sub/Writer";
-import { TypewriterEffect } from "@/components/ui/typewriter-effect";
-import Image from "next/image";
 import Lottie from "lottie-react";
 import anim from "../public/Animation - 1721896417600.json";
-import { SparklesIcon } from "@heroicons/react/24/solid";
-import { slideInFromTop } from "@/utils/motion";
 import { motion } from "framer-motion";
 import { MeteorsDemo } from "@/components/sub/MetroDemo";
 import { LayoutGridDemo } from "@/components/sub/LayoutGridDemo";
