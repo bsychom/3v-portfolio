@@ -35,7 +35,7 @@ const HeroContent = () => {
       initial={{opacity: 0}} animate={{opacity: 1, x:[-500,0]}}  transition={{duration:2}}
           className="text-lg text-gray-400  w-[90%]  md:max-w-[500px]"
         >
-          I&apos;m a Full Stack Software Engineer with experience in Website,
+          Im a Full Stack Software Engineer with experience in Website,
           Mobile, and Software development. Check out my projects and skills.
         </motion.p>
         {/* buttons */}
