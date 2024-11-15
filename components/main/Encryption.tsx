@@ -11,7 +11,7 @@ const Encryption = () => {
       <div className="absolute w-auto h-auto top-0 z-[5]">
         <motion.div
         initial={{opacity:0}} whileInView={{opacity: 1, x:[500,0]}} transition={{duration: 2}}
-          className="text-[40px] font-medium text-center text-gray-200"
+          className="text-[40px] font-medium text-center text-gray-200 bg-[url('/text.jpeg')] bg-contain bg-clip-text text-transparent  animate-text-slide uppercase"
         >
           Performance
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">

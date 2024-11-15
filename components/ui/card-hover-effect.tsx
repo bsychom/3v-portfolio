@@ -1,7 +1,7 @@
 
 import { cn } from "@/utils/utils";
 import { AnimatePresence, motion } from "framer-motion";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -38,7 +38,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 bg-violet-300 h-full w-full  block  rounded-3xl"
+                className="absolute inset-0 button-primary bg-violet-300  h-full w-full  block  rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -52,7 +52,7 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <Card className="bg-[#472d85] w-full  ">
+          <Card className="button-primary w-full  ">
             <div className="w-full h-[250px]  relative ">
                 <Image alt="img" src={item.img} fill />
 

@@ -6,10 +6,10 @@ import Lottie from "lottie-react";
 import anim from "../public/Animation - 1721896417600.json";
 import { motion } from "framer-motion";
 import { MeteorsDemo } from "@/components/sub/MetroDemo";
-import { LayoutGridDemo } from "@/components/sub/LayoutGridDemo";
 import './globals.css'
 import { Project } from "@/components/main/Project";
 import { ProjectBase } from "@/components/main/ProjectBase";
+import Eperience from "@/components/main/Experience";
 export default function Home() {
   return (
     <main className=" w-screen">
@@ -39,20 +39,17 @@ export default function Home() {
             </motion.div>
           </motion.div>
         </motion.section>
-     
-
+        <Eperience/>
         <Skills />
         <Encryption />
-        <Project/>
+        {/* <Project/> */}
         <ProjectBase/>
-        {/* <Projects /> */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, x: [-800, 0] }}
           transition={{ duration: 2 }}
           className="container relative z-40"
         >
-        <LayoutGridDemo/>
     </motion.div>
     {/* <div className="w-screen  relative z-[500]  text-white flex h-screen mb-28" id="contactme">
       <div className="flex flex-col justify-center">

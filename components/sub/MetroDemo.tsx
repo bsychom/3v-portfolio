@@ -25,37 +25,27 @@ export function MeteorsDemo() {
             </h3>
 
             <p className="font-normal font-[Poppins] text-sm md:text-base text-slate-400 mb-4 relative  z-50 text-justify">
-              I am a dedicated software engineer with a passion for developing
-              innovative web and mobile applications. My expertise spans both
-              frontend and backend development, with a focus on creating
-              seamless, user-friendly experiences. Proficient in technologies
-              such as React Native, Angular, and Next.js on the frontend, and
-              Node.js, NestJS, and MongoDB on the backend, I have successfully
-              built scalable solutions leveraging REST APIs and GraphQL.
+              I am passionate software engineer specializing in both web and
+              mobile development. I have expertise in React Native, Angular, and
+              Next.js for frontend, and Node.js, NestJS, and MongoDB for
+              backend. With experience building scalable applications using REST
+              APIs and GraphQL, I focus on creating seamless user experiences.
             </p>
             <p className="font-normal font-[Poppins] text-sm md:text-base text-slate-400 mb-4 relative  z-50 text-justify">
-              With professional experience as a software engineer at Thinkable
-              in the United States, I have worked exclusively in remote
-              environments. This experience has refined my ability to
-              communicate effectively, collaborate across time zones, and manage
-              projects independently, ensuring high-quality deliverables and
-              timely results.
+              I'm always exploring new technologies like Redux, Tailwind CSS,
+              and TypeScript to stay ahead of industry trends. Driven by
+              curiosity, adaptability, and a commitment to writing efficient,
+              high-quality code, I am eager to contribute to innovative projects
+              and solve complex challenges in collaborative environments.
             </p>
             <p className="font-normal font-[Poppins] text-sm md:text-base text-slate-400 mb-4 relative  z-50 text-justify">
-              I have a solid understanding of modern web development practices,
-              utilizing technologies like Tailwind CSS, TypeScript, and Docker
-              to deliver robust and maintainable systems. As a developer, I am
-              constantly exploring new technologies, such as Redux for state
-              management, and improving my skills to stay ahead of industry
-              trends.
+              I believe in continuous growth and constantly seek out
+              opportunities to expand my knowledge and skill set. My passion for
+              innovation drives me to not only improve existing systems but also
+              create new solutions that make a meaningful impact.
             </p>
 
-            <p className="font-normal font-[Poppins] text-sm md:text-base text-slate-400 mb-4 relative  z-50 text-justify">
-              Driven by curiosity, adaptability, and a commitment to
-              high-quality, efficient code, I thrive in remote collaborative
-              environments, always eager to contribute to innovative projects
-              and solve complex challenges.
-            </p>
+            
           </div>
 
           {/* Meaty part - Meteor effect */}
