@@ -17,6 +17,16 @@ const config: Config = {
         'empty': '""',
       },
       keyframes: {
+        text:{
+          "100%": {
+            backgroundPosition : '200px'
+          },
+        },
+        secondText:{
+          "100%":{
+            transform: "translateY(200px)"
+          }
+        },
         meteor: {
           "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
           "70%": { opacity: "1" },
@@ -33,7 +43,9 @@ const config: Config = {
       },
       animation: {
         "meteor-effect": "meteor 5s linear infinite",
-        "avatar-spin": "avatar 5s linear infinite"
+        "avatar-spin": "avatar 5s linear infinite",
+        "text-slide" : "text 10s linear infinite",
+        "second-text-slide" : "secondText 10s linear infinite"
       },
       fontFamily:{
         'lemonada' : ['Lemonada', 'sans-serif'],

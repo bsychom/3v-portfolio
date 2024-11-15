@@ -67,7 +67,7 @@ const HeroContent = () => {
         
       
       </motion.div>
-      <motion.div initial={{opacity: 0, rotateZ:180 }} animate={{opacity: 1,x:[500,0], rotateZ: 0}} transition={{duration:3}} className="w-1/2   h-full relative bg-red-60 flex justify-center items-center"
+      <motion.div initial={{opacity: 0, rotateZ:180 }} animate={{opacity: 1,x:[500,0], rotateZ: 0}} transition={{duration:3}} className="w-1/2   h-full relative  flex justify-center items-center"
 
       >
         <div className=" min-h-[300px] min-w-[300px]  md:min-h-[400px] md:min-w-[400px] rounded-full  relative   shadow-[16px_20px_16px_20px_#7042f88b]">

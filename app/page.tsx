@@ -7,6 +7,9 @@ import anim from "../public/Animation - 1721896417600.json";
 import { motion } from "framer-motion";
 import { MeteorsDemo } from "@/components/sub/MetroDemo";
 import { LayoutGridDemo } from "@/components/sub/LayoutGridDemo";
+import './globals.css'
+import { Project } from "@/components/main/Project";
+import { ProjectBase } from "@/components/main/ProjectBase";
 export default function Home() {
   return (
     <main className=" w-screen">
@@ -36,10 +39,12 @@ export default function Home() {
             </motion.div>
           </motion.div>
         </motion.section>
-
+     
 
         <Skills />
         <Encryption />
+        <Project/>
+        <ProjectBase/>
         {/* <Projects /> */}
         <motion.div
           initial={{ opacity: 0 }}

@@ -119,14 +119,14 @@ export const TypewriterEffectSmooth = ({
   });
   const renderWords = () => {
     return (
-      <div>
+      <div className="">
         {wordsArray.map((word, idx) => {
           return (
-            <div key={`word-${idx}`} className="w-1/2">
+            <div key={`word-${idx}`} className="w-1/2 text-blue-600">
               {word.text.map((char, index) => (
                 <span
                   key={`char-${index}`}
-                  className={cn(` `, word.className)}
+                  className={cn(` bg-[url('/text.jpeg')] bg-contain bg-clip-text text-transparent text-[5rem] uppercase animate-text-slide`, word.className)}
                 >
                   {char}
                 </span>
