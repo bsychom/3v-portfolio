@@ -2,8 +2,8 @@ import { HoverEffect } from "../ui/card-hover-effect";
 
 export function ProjectBase() {
   return (
-    <div className="w-screen  px-8 container relative z-30">
-      <h1 className="text-[40px] font-medium text-center text-gray-200 bg-[url('/text.jpeg')] bg-contain bg-clip-text text-transparent  animate-text-slide uppercase pb-10">
+    <div className="w-screen  px-8 container relative z-30 pt-20">
+      <h1 className="text-[40px] font-medium text-center text-gray-200 bg-[url('/text.jpeg')] bg-contain bg-clip-text text-transparent  animate-text-slide uppercase pb-14">
         My Projects
       </h1>
       <div>

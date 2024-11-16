@@ -1,9 +1,20 @@
 
 import { cn } from "@/utils/utils";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, animate, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+
+const fadeInAnimationsVariants = {
+  initial: {
+    opacity: 0,
+    y: 100
+  },
+  animate:{
+    opacity: 1,
+    y : 0
+  }
+}
 
 export const HoverEffect = ({
   items,
@@ -77,7 +88,12 @@ export const Card = ({
   children: React.ReactNode;
 }) => {
   return (
-    <div
+    <motion.div
+    variants={fadeInAnimationsVariants}
+    initial="initial"
+    animate="animate"
+    whileInView="animate"
+    viewport={{ once: true }}
       className={cn(
         "rounded-2xl h-full w-full  overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
         className
@@ -86,7 +102,7 @@ export const Card = ({
       <div className="relative z-50">
         <div className="">{children}</div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export const CardTitle = ({

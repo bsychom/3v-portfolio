@@ -10,7 +10,7 @@ const Encryption = () => {
     <div className="flex flex-row relative  items-center justify-center  w-full md:h-[600px] h-[400px] ">
       <div className="absolute w-auto h-auto top-0 z-[5]">
         <motion.div
-        initial={{opacity:0}} whileInView={{opacity: 1, x:[500,0]}} transition={{duration: 2}}
+        initial={{opacity:0}} whileInView={{opacity: 1, x:[500,0]}} transition={{duration: 2}} viewport={{once: true}}
           className="text-[40px] font-medium text-center text-gray-200 bg-[url('/text.jpeg')] bg-contain bg-clip-text text-transparent  animate-text-slide uppercase"
         >
           Performance
