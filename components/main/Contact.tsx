@@ -28,7 +28,7 @@ className="text-[40px] font-medium text-center text-gray-200 bg-[url('/text.jpeg
 >
   Contact Me
 </motion.h1>
-      <div className="md:w-full w-[90%]  container h-full flex flex-col   items-center  gap-6 border-4 border-[#130633] rounded-lg overflow-hidden">
+      <div className="md:w-full w-[90%]  container h-full flex flex-col   items-center  gap-6  rounded-lg overflow-hidden">
 
         
         <div className="w-full flex flex-col lg:flex-row  gap-8   ">

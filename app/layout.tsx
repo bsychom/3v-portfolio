@@ -5,6 +5,7 @@ import StarsCanvas from "@/components/main/StarBackground";
 import Navbar from "@/components/main/Navbar";
 import Footer from "@/components/main/Footer";
 import Providers from "./Provider";
+import Nav from "@/components/main/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +26,8 @@ export default function RootLayout({
       >
         <Providers>
         <StarsCanvas />
-        <Navbar />
+        {/* <Navbar /> */}
+        <Nav/>
         {children}
         </Providers>
         {/* <Footer /> */}

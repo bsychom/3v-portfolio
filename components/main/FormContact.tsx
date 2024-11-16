@@ -6,8 +6,9 @@ import { Textarea } from "../ui/textArea";
 import { cn } from "@/utils/utils";
 import { Button } from "@nextui-org/react";
 import { toast } from "sonner";
+import axios, { AxiosError } from "axios";
 
-interface ContactType {
+export interface ContactType {
   name : string;
   email : string;
   message : string;
@@ -69,22 +70,21 @@ export function ContactForm() {
     e.preventDefault();
     setLoading(true);
     try {
-      console.log('im in handlig submit')
       if(!checkInput()) return
-      setTimeout(() =>{
-        
-        console.log('every thing is ok')
-        console.log(formValues)
-        setLoading(false);
-        toast.success('message sent successfully');
-        clearInputs();
-      }, 2000)
-      console.log('nice')
+      const res = await axios.post('/api/send', {
+        name : formValues.name,
+        email : formValues.email,
+        message : formValues.message
+      })
+      toast.success('message sent successfully');
+      clearInputs();
      
     } catch (e) {
-      console.log(e)
+      if(e instanceof AxiosError){
+        toast.error(e.message);
+      }
     } finally {
-      console.log('final')
+      setLoading(false)
     }
   };
   return (
