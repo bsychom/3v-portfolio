@@ -21,6 +21,7 @@ export default function About(){
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1, x: [800, 0], y: [-600, 0], rotate: 0 }}
                   transition={{ duration: 2 }}
+                  
                   className="w-full  md:w-[65%] mx-auto realtive  text-white rounded-md  py-10"
                 >
                   <MeteorsDemo />

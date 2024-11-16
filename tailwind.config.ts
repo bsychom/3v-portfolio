@@ -1,4 +1,5 @@
 import { transform } from 'next/dist/build/swc';
+const {nextui} = require("@nextui-org/react");
 import type { Config } from 'tailwindcss'
 const {
   default: flattenColorPalette,
@@ -9,10 +10,14 @@ const config: Config = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: "class",
   theme: {
     extend: {
+      boxShadow: {
+        input: `0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08)`,
+      },
       content: {
         'empty': '""',
       },
@@ -50,6 +55,8 @@ const config: Config = {
       fontFamily:{
         'lemonada' : ['Lemonada', 'sans-serif'],
         'lexend-deca' : ['Lexend Deca', 'sans-serif'],
+        'poppins': ['Poppins', 'sans-serif'],
+        'roboto' : ['Roboto']
       }
       // backgroundImage: {
       //   'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -61,7 +68,7 @@ const config: Config = {
       center: true,
     }
   },
-  plugins: [addVariablesForColors],
+  plugins: [addVariablesForColors, nextui()],
   
 }
 export default config

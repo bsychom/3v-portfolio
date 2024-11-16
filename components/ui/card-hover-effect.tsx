@@ -89,10 +89,9 @@ export const Card = ({
 }) => {
   return (
     <motion.div
-    variants={fadeInAnimationsVariants}
-    initial="initial"
-    animate="animate"
-    whileInView="animate"
+    initial={{opacity: 0}}
+    whileInView={{x: [800, 0], y: [600, 0], rotate: [85,0], opacity: 1}}
+    transition={{duration: 2}}
     viewport={{ once: true }}
       className={cn(
         "rounded-2xl h-full w-full  overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",

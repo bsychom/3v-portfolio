@@ -1,27 +1,51 @@
 import { HoverEffect } from "../ui/card-hover-effect";
-
+import { motion } from "framer-motion";
 export function ProjectBase() {
   return (
     <div className="w-screen  px-8 container relative z-30 pt-20">
-      <h1 className="text-[40px] font-medium text-center text-gray-200 bg-[url('/text.jpeg')] bg-contain bg-clip-text text-transparent  animate-text-slide uppercase pb-14">
+      <motion.h1
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [500, 0], opacity: 1 }}
+        transition={{ duration: 2 }}
+        viewport={{ once: true }}
+        className="text-[40px] font-medium text-center text-gray-200 bg-[url('/text.jpeg')] bg-contain bg-clip-text text-transparent  animate-text-slide uppercase pb-14"
+      >
         My Projects
-      </h1>
+      </motion.h1>
       <div>
-        <h2 className="text-[22px] font-semibold  text-gray-200  bg-[url('/text.jpeg')] bg-contain bg-clip-text text-transparent  animate-text-slide uppercase">
+        <motion.h2
+          initial={{ opacity: 0 }}
+          whileInView={{ x: [-500, 0], opacity: 1 }}
+          transition={{ duration: 2 }}
+          viewport={{ once: true }}
+          className="text-[22px] font-semibold  text-gray-200  bg-[url('/text.jpeg')] bg-contain bg-clip-text text-transparent  animate-text-slide uppercase"
+        >
           web projects
-        </h2>
+        </motion.h2>
         <HoverEffect items={webProjects} />
       </div>
       <div>
-        <h2 className="text-[22px] font-semibold  text-gray-200  bg-[url('/text.jpeg')] bg-contain bg-clip-text text-transparent  animate-text-slide uppercase">
+        <motion.h2
+          initial={{ opacity: 0 }}
+          whileInView={{ x: [-500, 0], opacity: 1 }}
+          transition={{ duration: 2 }}
+          viewport={{ once: true }}
+          className="text-[22px] font-semibold  text-gray-200  bg-[url('/text.jpeg')] bg-contain bg-clip-text text-transparent  animate-text-slide uppercase"
+        >
           Design projects
-        </h2>
+        </motion.h2>
         <HoverEffect items={designProjects} />
       </div>
       <div>
-        <h2 className="text-[22px] font-semibold  text-gray-200  bg-[url('/text.jpeg')] bg-contain bg-clip-text text-transparent  animate-text-slide uppercase">
+        <motion.h2
+          initial={{ opacity: 0 }}
+          whileInView={{ x: [-500, 0], opacity: 1 }}
+          transition={{ duration: 2 }}
+          viewport={{ once: true }}
+          className="text-[22px] font-semibold  text-gray-200  bg-[url('/text.jpeg')] bg-contain bg-clip-text text-transparent  animate-text-slide uppercase"
+        >
           System Administration & Infrastructure Projects:
-        </h2>
+        </motion.h2>
         <HoverEffect items={systemAdminProjects} />
       </div>
     </div>

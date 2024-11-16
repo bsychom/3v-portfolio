@@ -8,6 +8,9 @@
 @tailwind utilities;
 
 
+:root {
+  --primary-blueDark: #06092a;  /* Define the variable */
+}
 
 .cursive {
   font-family: "Cedarville Cursive", cursive;
