@@ -18,7 +18,8 @@ export default function Eperience() {
   }
   return (
     
-    <motion.div className=" pt-32 lg:pt-22 text-white"   initial={{opacity: 0}} whileInView={{ opacity: 1, x: [-800, 0], y: [600, 0], rotate: 0 }} transition={{duration: 1}} viewport={{once: true}} >
+    <motion.div className=" mt-56 lg:mt-40 w-full md:w-[95%] mx-auto   text-white"   
+    initial={{opacity: 0}} whileInView={{ opacity: 1, x: [-800, 0], y: [600, 0], rotate: 0 }} transition={{duration: 1}} viewport={{once: true}} >
     <div className=" w-full relative max-w-4xl container  px-5 md:px-0">
       <div className="  h-full w-full  rounded-full blur-3xl" />
       <div className="relative shadow-xl bg-black/50 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl ">

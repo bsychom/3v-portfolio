@@ -14,7 +14,7 @@ import Contact from "@/components/main/Contact";
 export default function Home() {
   return (
     <main className=" w-screen">
-      <div className="flex flex-col gap-20">
+      <div >
         <Hero />
         <About/>
         <Eperience/>
