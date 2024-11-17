@@ -8,7 +8,7 @@ export function ProjectBase() {
         whileInView={{ y: [500, 0], opacity: 1 }}
         transition={{ duration: 2 }}
         viewport={{ once: true }}
-        className="text-[40px] font-medium text-center text-gray-200 bg-[url('/text.jpeg')] bg-contain bg-clip-text text-transparent  animate-text-slide uppercase pb-14"
+        className="text-[40px] font-bold 2xl:font-medium text-center text-gray-200 bg-[url('/text.jpeg')] bg-contain bg-clip-text text-transparent  animate-text-slide uppercase pb-14"
       >
         My Projects
       </motion.h1>
@@ -196,12 +196,19 @@ export const webProjects = [
     link: "https://v2-kstech.vercel.app/",
   },
   {
+    title: "Portfolio Website",
+    img: "/portfolio.png",
+    description:
+      "A personal portfolio website built using Next.js and Tailwind CSS to showcase my projects, skills, and experiences. It features a clean, responsive design, seamless navigation, and optimized performance. The site includes a downloadable CV, contact form, and social media links to connect with potential employers and collaborators.",
+    link: "https://mhaddaoui.vercel.app/",
+  },
+  {
     title: "Contaxly",
     img: "/contacxly.png",
 
     description:
       "I am working on a full-stack application with Next.js and Prisma, implementing CRUD functionality for managing contacts. The app allows users to sign up and sign in with JWT authentication, create, update, and search contacts easily, managed using Docker Compose for a streamlined and isolated development setup.",
-    link: "https://microsoft.com",
+    link: "https://github.com/mhaddaou/CRUD-Application",
   },
   {
     title: "Ft_transcendence",
@@ -220,10 +227,10 @@ export const webProjects = [
   },
   {
     img: "/mern.png",
-    title: "Google",
+    title: "User Management App",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
+      "A MERN stack application built with Vite, featuring secure user authentication and management. The app includes sign-in and sign-up functionality, and a dashboard to display user details.  responsive design, and streamlined user experience for managing user data.",
+    link: "https://mern-app-x2sp.vercel.app/",
   },
 ];
 

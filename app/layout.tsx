@@ -7,7 +7,6 @@ import Footer from "@/components/main/Footer";
 import Providers from "./Provider";
 import Nav from "@/components/main/Nav";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Space Portfolio",
@@ -22,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
+        className={` bg-[#030014] overflow-y-scroll overflow-x-hidden`}
       >
         <Providers>
         <StarsCanvas />
@@ -30,7 +29,7 @@ export default function RootLayout({
         <Nav/>
         {children}
         </Providers>
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

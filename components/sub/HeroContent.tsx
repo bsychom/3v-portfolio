@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const HeroContent = () => {
   return (
-   <div className="w-full flex flex-col-reverse items-center lg:flex-row gap-16 mb-5 md:mb-0 md:gap-0  container relative  pt-40">
+   <div className="w-full flex flex-col-reverse items-center lg:flex-row gap-16 mb-5 md:mb-0 md:gap-0  container relative  pt-40 z-10">
     <motion.div  className="w-[90%] mx-auto lg:w-1/2 text-white flex flex-col gap-12  relative z-20  ">
      {/* welcom text */}
       <motion.div

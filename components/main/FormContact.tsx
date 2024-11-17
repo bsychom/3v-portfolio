@@ -89,7 +89,7 @@ export function ContactForm() {
   };
   return (
     <div className=" w-[80%] mx-auto   text-white">
-      <form className="flex flex-col gap-10" onSubmit={handleSubmit}>
+      <form className="flex flex-col gap-6 2xl:gap-10" onSubmit={handleSubmit}>
         {/* firstname and lastname */}
        
         {/* email and phone */}
@@ -113,10 +113,10 @@ export function ContactForm() {
 
         <Button 
           isLoading={loading}
-          className="bg-gradient-to-br  tracking-wide relative group/btn from-blueDark button-primary   to-neutral-600 block  w-full text-white rounded-md h-10  font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] "
+          className="bg-gradient-to-br  tracking-wide relative group/btn from-blueDark button-primary   to-neutral-600 block  w-full text-white rounded-md h-11  font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] "
           type="submit"
         >
-          <p className={`${loading ? 'hidden' : 'block'} ` }>sent message &rarr;</p>
+          <p className={`${loading ? 'hidden' : 'block'} font-semibold font-poppins tracking-wider` }>Sent Message <span className="font-sans">&rarr;</span></p>
           <BottomGradient />
         </Button>
 

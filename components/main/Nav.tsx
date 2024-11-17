@@ -2,6 +2,7 @@
 import React from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button} from "@nextui-org/react";
 import { AcmeLogo } from "../sub/logo";
+import Image from "next/image";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -27,8 +28,9 @@ export default function Nav() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <AcmeLogo />
-          <p className="font-bold text-inherit">ACME</p>
+          <Image src="/logo.png" alt="logo" width={30} height={30} />
+          {/* <AcmeLogo /> */}
+          <p className="font-bold text-xl  tracking-wider text-gray-400">ED</p>
         </NavbarBrand>
       </NavbarContent>
 
