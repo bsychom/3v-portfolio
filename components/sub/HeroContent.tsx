@@ -44,7 +44,7 @@ const HeroContent = () => {
           </button>
           <button type="button">
             <motion.a
-              href="Mohamed_Haddaoui_FullStack_cv.pdf"
+              href="Mohamed_Haddaoui_Resume.pdf"
               target="_blank"
               className="py-3 relative button-primary px-4 font-lemonada font-bold tracking-wider text-center text-white cursor-pointer rounded-lg max-w-[200px]"
             >

@@ -8,7 +8,7 @@ import Nav from "@/components/main/Nav";
 
 
 export const metadata: Metadata = {
-  title: "Space Portfolio",
+  title: "Mohamed Haddaoui",
   description: "This is my portfolio",
 };
 
