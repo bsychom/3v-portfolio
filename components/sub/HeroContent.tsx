@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const HeroContent = () => {
   return (
-    <div className="flex gap-24 flex-col-reverse lg:flex-row container items-center pt-16 pb-36 lg:py-16 min-h-[calc(100vh-20px)] ">
+    <div className="flex gap-24 flex-col-reverse lg:flex-row container items-center pt-16 pb-36 lg:py-40  ">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ x: [-500, 0], opacity: 1 }}
@@ -23,11 +23,11 @@ const HeroContent = () => {
             Welcome to My Portfolio
           </h1>
         </div>
-        <div className=" w-[80%] lg:w-full mx-auto  text-center lg:text-start">
+        <div className=" w-[80%] lg:w-full max-w-lg   text-center lg:text-start">
           <TypewriterEffect words={words} />
         </div>
         <div>
-          <p className="text-lg text-gray-400  w-[80%]  lg:w-full  mx-auto">
+          <p className="text-lg text-gray-400 max-w-lg  w-[80%]  lg:w-full  mx-auto">
             I&apos;m a Full Stack Software Engineer with experience in Website,
             Mobile, and Software development. Check out my projects and skills.
           </p>
@@ -36,7 +36,7 @@ const HeroContent = () => {
         <div className="flex gap-5  py-4 relative z-30">
           <button type="button">
             <Link
-              href="/#aboutme"
+              href="/#about"
               className="py-3 relative button-primary px-4 font-lemonada font-bold tracking-wider text-center text-white cursor-pointer rounded-lg max-w-[200px]"
             >
               Learn More!

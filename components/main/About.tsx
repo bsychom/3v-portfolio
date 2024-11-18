@@ -5,7 +5,7 @@ import { MeteorsDemo } from '../sub/MetroDemo';
 
 export default function About(){
     return (
-        <motion.section className="w-full   " id="aboutme">
+        <motion.section className="w-full   lg:pt-20 " id="about">
           <motion.div className="relative w-full  min-h-[380px] sm:min-h-[100px]">
             <motion.div
               className="hidden sm:block"

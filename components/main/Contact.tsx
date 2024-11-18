@@ -17,27 +17,27 @@ import {motion} from 'framer-motion'
 
 export default function Contact() {
   return (
-    <div className="w-screen   pt-[2.5rem] 2xl:pt-[180px] relative z-40 text-white mb-10   ">
+    <div className="w-screen    2xl:pt-[180px] relative z-40 text-white mb-10 pt-16  " id="contact">
       <motion.h1
 
 initial={{ opacity: 0 }}
 whileInView={{ y: [200, 0], opacity: 1 }}
 transition={{ duration: 2 }}
 viewport={{once: true}}
-className="text-[40px] font-bold 2xl:font-medium text-center text-gray-200 bg-[url('/text.jpeg')] bg-contain bg-clip-text text-transparent  animate-text-slide uppercase 2xl:pb-14"
+className="text-[40px] font-bold 2xl:font-medium text-center text-gray-200 bg-[url('/text.jpeg')]  bg-contain bg-clip-text text-transparent  animate-text-slide uppercase 2xl:pb-14"
 >
   Contact Me
 </motion.h1>
       <div className="md:w-full w-[90%]  container h-full flex flex-col   items-center  gap-6  rounded-lg overflow-hidden ">
 
         
-        <div className="w-full flex flex-col lg:flex-row  gap-8   ">
+        <div className="w-full flex flex-col lg:flex-row  lg:gap-8   ">
           <motion.div 
           initial={{opacity: 0}}
           whileInView={{x:[-400, 0], opacity: 1}}
           transition={{duration: 2}}
           viewport={{once: true}}
-          className="w-full  mx-auto  lg:w-[40%] bg-light  relative  py-10 ">
+          className="w-full  mx-auto  lg:w-[40%] bg-light  relative  lg:py-10 ">
             {/* <Image
               src="/icons/contact.svg"
               alt=""
@@ -62,7 +62,7 @@ className="text-[40px] font-bold 2xl:font-medium text-center text-gray-200 bg-[u
                 <IconMailFilled className=""/>
                 <p>mhaddaou@gmail.com</p>
                 </div>
-                <div className="button-primary flex gap-3 p-4 rounded-lg">
+                <div className="color-primary flex gap-3 p-4 rounded-lg">
                 <IconPhoneFilled className="text-violet-600" />
                 <p className="text-violet-600">+212 699 848 024</p>
 

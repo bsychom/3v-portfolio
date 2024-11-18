@@ -18,7 +18,7 @@ export default function Eperience() {
   }
   return (
     
-    <motion.div className=" mt-56 lg:mt-40 w-full md:w-[95%] mx-auto   text-white"   
+    <motion.div className=" pt-56 lg:pt-40 w-full md:w-[95%] mx-auto   text-white" id="experience"   
     initial={{opacity: 0}} whileInView={{ opacity: 1, x: [-800, 0], y: [600, 0], rotate: 0 }} transition={{duration: 1}} viewport={{once: true}} >
     <div className=" w-full relative max-w-4xl container  px-5 md:px-0">
       <div className="  h-full w-full  rounded-full blur-3xl" />

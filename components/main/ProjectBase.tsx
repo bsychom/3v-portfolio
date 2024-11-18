@@ -2,7 +2,7 @@ import { HoverEffect } from "../ui/card-hover-effect";
 import { motion } from "framer-motion";
 export function ProjectBase() {
   return (
-    <div className="w-screen  px-8 container relative z-30 pt-20">
+    <div className="w-screen  px-8 container relative z-30 pt-20" id="projects">
       <motion.h1
         initial={{ opacity: 0 }}
         whileInView={{ y: [500, 0], opacity: 1 }}

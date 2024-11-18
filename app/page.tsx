@@ -14,7 +14,7 @@ import Contact from "@/components/main/Contact";
 export default function Home() {
   return (
     <main className=" w-screen">
-      <div >
+      <div className="" >
         <Hero />
         <About/>
         <Eperience/>
