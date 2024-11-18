@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import StarsCanvas from "@/components/main/StarBackground";
-import Navbar from "@/components/main/Navbar";
 import Footer from "@/components/main/Footer";
 import Providers from "./Provider";
 import Nav from "@/components/main/Nav";
@@ -25,7 +24,6 @@ export default function RootLayout({
       >
         <Providers>
         <StarsCanvas />
-        {/* <Navbar /> */}
         <Nav/>
         {children}
         </Providers>

@@ -8,19 +8,12 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import {
-  RxDiscordLogo,
-  RxGithubLogo,
-  RxInstagramLogo,
-  RxTwitterLogo,
-  RxLinkedinLogo,
-} from "react-icons/rx";
 
 const Footer = () => {
   return (
     <section className="pt-16 pb-7 bg-gray-900/60 relative z-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col sm:flex-row items-center justify-between pb-14 border-b border-gray-500 gap-8">
+        <div className="flex flex-col sm:flex-row items-center justify-between pb-14 border-b border-gray-500 gap-8 ">
           <Image src="/logo.png" alt="logo" width={60} height={60} />
           <div className="flex items-center gap-4">
             <ul className="flex  gap-4">
@@ -48,154 +41,102 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="py-14  flex flex-col lg:flex-row justify-between gap-8 border-b border-gray-500">
-            <div className="">
-              <h6 className="text-lg font-medium text-white mb-7 max-lg:text-center">
-                Pagedone
-              </h6>
-              <ul className="flex flex-col max-lg:items-center gap-6">
-                <li>
-                  <a
-                    href="javascript:;"
-                    className="text-base font-normal max-lg:text-center text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 focus-within:text-amber-400"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="javascript:;"
-                    className="text-base font-normal max-lg:text-center text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 focus-within:text-amber-400"
-                  >
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="javascript:;"
-                    className="text-base font-normal max-lg:text-center text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 focus-within:text-amber-400"
-                  >
-                    Pricing
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="javascript:;"
-                    className="text-base font-normal max-lg:text-center text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 focus-within:text-amber-400"
-                  >
-                    Pro Version
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="">
-              <h6 className="text-lg font-medium text-white mb-7 max-lg:text-center">
-                Products
-              </h6>
-              <ul className="flex flex-col gap-6 max-lg:items-center">
-                <li>
-                  <a
-                    href="javascript:;"
-                    className="text-base font-normal text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 focus-within:text-amber-400"
-                  >
-                    Figma UI System
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="javascript:;"
-                    className="text-base font-normal text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 focus-within:text-amber-400"
-                  >
-                    Icons Assets
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="javascript:;"
-                    className="text-base font-normal text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 focus-within:text-amber-400"
-                  >
-                    Responsive Blocks
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="javascript:;"
-                    className="text-base font-normal text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 focus-within:text-amber-400"
-                  >
-                    Components Library
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="">
-              <h6 className="text-lg font-medium text-white mb-7 max-lg:text-center">
-                Resources
-              </h6>
-              <ul className="flex flex-col gap-6 max-lg:items-center">
-                <li>
-                  <a
-                    href="javascript:;"
-                    className="text-base font-normal text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 focus-within:text-amber-400"
-                  >
-                    FAQs
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="javascript:;"
-                    className="text-base font-normal text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 focus-within:text-amber-400"
-                  >
-                    Quick Start
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="javascript:;"
-                    className="text-base font-normal text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 focus-within:text-amber-400"
-                  >
-                    Documentation
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="javascript:;"
-                    className="text-base font-normal text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 focus-within:text-amber-400"
-                  >
-                    User Guide
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="">
-              <h6 className="text-lg font-medium text-white mb-7 max-lg:text-center">
-                Contact Me
-              </h6>
-              <ul className="flex flex-col gap-6 max-lg:items-center">
-                <li className="flex gap-2 text-base font-normal text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 focus-within:text-amber-400">
-                  
-                  <IconMailFilled className="" />
+        <div className="py-14  flex w-[80%] lg:w-full mx-auto justify-between items-start gap-8 border-b border-gray-500  flex-wrap ">
+          <div className="">
+            <h6 className="text-lg font-medium text-white mb-7 ">
+              Quick Links
+            </h6>
+            <ul className="flex flex-col  gap-6">
+              <li>
+                <Link
+                  className="text-base font-normal  text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 "
+                  href="#about"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-base font-normal  text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 "
+                  href="#experience"
+                >
+                  Experience
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-base font-normal  text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 "
+                  href="#skills"
+                >
+                  Skills
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-base font-normal  text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 "
+                  href="#contact"
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="">
+            <h6 className="text-lg font-medium text-white mb-7 ">
+              Project Categories
+            </h6>
+            <ul className="flex flex-col  gap-6">
+              <li>
+                <Link
+                  className="text-base font-normal  text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 "
+                  href="#web-projects"
+                >
+                  Web Developmen
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-base font-normal  text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 "
+                  href="#design-projects"
+                >
+                  Design Projects
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-base font-normal  text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 "
+                  href="#system-admin-projects"
+                >
+                  System Administration
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div className="">
+            <h6 className="text-lg font-medium text-white mb-7 ">
+              Contact Information
+            </h6>
+            <ul className="flex flex-col gap-6 ">
+              <li className="flex gap-2 text-base font-normal text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 focus-within:text-amber-400">
+                <IconMailFilled className="" />
                 <p className="tracking-wider">mhaddaou@student.1337.ma</p>
-                </li>
-                <li className="flex gap-2 text-base font-normal text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 focus-within:text-amber-400">
-                  
+              </li>
+              <li className="flex gap-2 text-base font-normal text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 focus-within:text-amber-400">
                 <IconMailFilled />
                 <p className="tracking-wider">mhaddaou@gmail.com</p>
-                </li>
-                <li className="flex gap-2 text-base font-normal text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 focus-within:text-amber-400">
-                  
-                  <IconPhoneFilled />
+              </li>
+              <li className="flex gap-2 text-base font-normal text-gray-400 whitespace-nowrap transition-all duration-300 hover:text-violet-600 focus-within:outline-0 focus-within:text-amber-400">
+                <IconPhoneFilled />
                 <p className="tracking-wider">+212 699 848 024</p>
-                </li>
-                
-              </ul>
-            </div>
-            
-          
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="flex flex-col-reverse sm:flex-row items-center justify-between gap-5 pt-7">
           <p className="text-gray-400 font-bold flex items-center font-poppins text-sm">
             Made with
-            <span className=" font-normal text-red-500 text-5xl  px-1">
+            <span className=" font-normal text-red-500 text-xl  px-1">
               &hearts;
             </span>
             © 2024, All rights reserved.
@@ -215,13 +156,12 @@ const Footer = () => {
                 />
               </svg>
             </div>
-            <button
-              type="button"
-              id="default-search"
+            <Link
+              href="#contact"
               className="block button-primary w-full lg:min-w-[448px] pr-12 pl-6 py-3 text-base font-normal shadow-xs text-gray-50 bg-transparent border border-gray-700 rounded-full placeholder-gray-400 focus:outline-none leading-relaxed transition-all duration-500 "
             >
               Have a question? talk to us
-            </button>
+            </Link>
           </div>
         </div>
       </div>

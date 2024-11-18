@@ -30,7 +30,7 @@ export default function Nav() {
           className="sm:hidden text-gray-400"
         />
         <NavbarBrand>
-          <Link href="#hero" className="cursor-pointer">
+          <Link className="cursor-pointer">
           <Image src="/logo.png" alt="logo" width={30} height={30} />
           <p className="font-bold text-xl  tracking-wider text-gray-400">ED</p>
           </Link>

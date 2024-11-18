@@ -32,7 +32,7 @@ export function MeteorsDemo() {
               APIs and GraphQL, I focus on creating seamless user experiences.
             </p>
             <p className="font-normal font-[Poppins] text-sm md:text-base text-slate-400 mb-4 relative  z-50 text-justify">
-              I'm always exploring new technologies like Redux, Tailwind CSS,
+              I&apos;m always exploring new technologies like Redux, Tailwind CSS,
               and TypeScript to stay ahead of industry trends. Driven by
               curiosity, adaptability, and a commitment to writing efficient,
               high-quality code, I am eager to contribute to innovative projects

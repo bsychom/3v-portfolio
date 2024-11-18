@@ -11,7 +11,7 @@ export const EmailTemplate: React.FC<Readonly<ContactType>> = ({
   message,
 }) => (
   <div>
-    <h1>Hi, i'm {name}!</h1>
+    <h1>Hi, i&apos;m {name}!</h1>
     <h2>my email is:  {email}</h2>
     <h3>message : {message} </h3>
   </div>

@@ -50,11 +50,11 @@ className="text-[40px] font-bold 2xl:font-medium text-center text-gray-200 bg-[u
               
               <div className="flex flex-col gap-1 ">
                 <h2 className="capitalize font-poppins font-semibold text-xl text-dark/70 pl-4">
-                Let's Talk
+                Let&apos;s Talk
                 </h2>
 
                 <p className="font-roboto font-light  text-dark/70 pl-4 text-sm">
-                Feel free to reach out to me for any inquiries, collaborations, or just to say hello. I'm always excited to connect with new people!
+                Feel free to reach out to me for any inquiries, collaborations, or just to say hello. I&apos;m always excited to connect with new people!
                 </p>
               </div>
               <div className="flex flex-col gap-1 font-poppins ">

@@ -8,12 +8,13 @@ export function ProjectBase() {
         whileInView={{ y: [500, 0], opacity: 1 }}
         transition={{ duration: 2 }}
         viewport={{ once: true }}
-        className="text-[40px] font-bold 2xl:font-medium text-center text-gray-200 bg-[url('/text.jpeg')] bg-contain bg-clip-text text-transparent  animate-text-slide uppercase pb-14"
+        className="text-[40px] font-bold 2xl:font-medium text-center text-gray-200 bg-[url('/text.jpeg')] bg-contain bg-clip-text text-transparent  animate-text-slide uppercase "
       >
         My Projects
       </motion.h1>
-      <div>
+      <div id="web-projects" className="pt-16 ">
         <motion.h2
+          
           initial={{ opacity: 0 }}
           whileInView={{ x: [-500, 0], opacity: 1 }}
           transition={{ duration: 2 }}
@@ -24,7 +25,10 @@ export function ProjectBase() {
         </motion.h2>
         <HoverEffect items={webProjects} />
       </div>
-      <div>
+      <div
+          id="design-projects"
+          className="pt-16"
+      >
         <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ x: [-500, 0], opacity: 1 }}
@@ -36,8 +40,12 @@ export function ProjectBase() {
         </motion.h2>
         <HoverEffect items={designProjects} />
       </div>
-      <div>
+      <div
+      id="system-admin-projects"
+      className="pt-16"
+      >
         <motion.h2
+          
           initial={{ opacity: 0 }}
           whileInView={{ x: [-500, 0], opacity: 1 }}
           transition={{ duration: 2 }}
